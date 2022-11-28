@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle by Dardo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <div class="block0">
+            <img class="image" width="300">
+            <div class="info">
+                <ul class="info-box"></ul>
+                <button class="shiny" style="width:200px; position:relative; left:-30px;" onclick="showShiny()">Get Shinny</button>
+            </div>
+        </div>
+        <h1 id="number"></h1>
+        <div class="block1">
+            <button onclick="back()" id="back">Back</button>
+            <button onclick="next()" id="next">Next</button>
+        </div>
+        <div class="block2">
+            <input type="number">
+            <button onclick="send()" class="send">Send</button>
+        </div>
+        <div class="block3">
+            <input type="text">
+            <button onclick="send2()" class="send">Send</button>
+        </div>
+        <input oninput="slide()" class="range" type="range" min="1" max="905" value="1">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
